@@ -16,7 +16,7 @@ export default function Home() {
   const [cache, setCache] = useState([]);
 
   const fetchWeather = (e) => {
-    const weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
+    const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
     const cityTimeURL = `https://timezone.abstractapi.com/v1/current_time/?api_key=${process.env.NEXT_PUBLIC_TIME_KEY}&location=${city}`;
 
